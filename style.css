@@ -1,0 +1,323 @@
+/*estilizações Globais*/
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  background: linear-gradient(45deg, #241b41, #471c71, #59178a);
+}
+
+body {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #d1d5ca;
+  line-height: 1.1;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 4.2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.7rem;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 2.2rem;
+  line-height: 1.3;
+}
+
+section {
+  display: flex;
+  max-width: 100rem;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+/*pequenas estilizações*/
+
+.container {
+  padding: 5rem 2rem;
+}
+
+.icones {
+  width: 2rem;
+  height: auto;
+}
+
+.font-white {
+  color: white;
+}
+
+.font-black {
+  color: rgba(0, 0, 0, 0.664);
+}
+
+.alinhar-texto {
+  text-align: center;
+}
+
+.borda {
+  border-radius: 1rem;
+}
+
+/*header*/
+
+header {
+  position: sticky;
+  background: #4c4452;
+  padding: 2rem;
+  z-index: 1;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  list-style: none;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+img.icones-header {
+  width: 3rem;
+}
+
+/*seção quem sou eu*/
+
+section.secao-quem-sou-eu div {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.realcar-nome {
+  font-size: 4.2rem;
+  background: linear-gradient(45deg, #c679ff, #fa64b7);
+
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.botes-quem-sou-eu {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: white;
+}
+
+.primeiro-botao-quem {
+  background: linear-gradient(45deg, #b84af6, #f236a0);
+  padding: 1.5rem;
+  width: 15rem;
+}
+
+.segundo-botao-quem {
+  border: white;
+  padding: 1.5rem;
+  border: solid 0.1rem;
+  width: 15rem;
+}
+
+.primeiro-botao-quem:hover {
+  box-shadow: 0 0.2rem 0.6rem 0 rgba(255, 255, 255, 0.582);
+}
+
+.segundo-botao-quem:hover {
+  background: #793f9b7e;
+}
+
+.primeiro-paragrafo-quem {
+  font-size: 2rem;
+}
+
+.segundo-paragrafo-quem {
+  color: gray;
+  font-size: 1.3rem;
+}
+
+/*seção sobre mim*/
+
+.secao-sobre-mim {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container-sobre-mim {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container-icones-sobre-mim {
+  display: flex;
+  gap: 2rem;
+}
+
+.sobre-mim-icones-inativo {
+  border: solid 0.1rem #b84af6;
+  padding: 1rem;
+}
+
+.sobre-mim-icones-inativo:hover {
+  transition: 0.3s;
+  transform: scale(1.2);
+  height: auto;
+}
+
+/*seção projeto*/
+
+.h2-projetos {
+  padding: 5rem;
+}
+
+.container-caixas-projeto {
+  display: flex;
+  gap: 10rem;
+  flex: 1;
+}
+
+.caixa-projeto {
+  display: flex;
+  flex-flow: column;
+  background-color: #302251;
+  border: solid 0.1rem rgba(128, 128, 128, 0.295);
+  padding: 2rem 5rem;
+  gap: 2rem;
+}
+
+.caixa-projeto:hover {
+  border: solid 0.1rem gray;
+  transition: 0.6s;
+}
+
+/*seção Habilidades*/
+
+.Habilidades-caixa {
+  display: flex;
+  gap: 2rem;
+}
+
+.Habilidades-caixa p {
+  background-color: #50287e;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.icone-link-externo {
+  width: 1.3rem;
+  height: auto;
+}
+
+.caixa-link-externo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.caixa-link-externo a:hover {
+  color: #e66cd2a1;
+}
+
+.container-habilidades {
+  padding: 5rem;
+  display: flex;
+  gap: 5rem;
+}
+
+.container-habilidades p {
+  background-color: #522582;
+  border: solid 0.1rem #b84af6;
+  padding: 2rem;
+}
+
+/*footer*/
+
+footer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  gap: 2rem;
+  background: #4c4452;
+}
+
+footer h2 {
+  padding: 5rem;
+}
+
+.caixa-contato {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+.caixa-contato-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border: solid 0.1rem #c679ff;
+  gap: 2rem;
+}
+
+.caixa-links-footer {
+  display: flex;
+  gap: 2rem;
+}
+
+.diretos {
+  color: rgba(128, 128, 128, 0.801);
+}
+
+/*funcionalidades com java scriipt*/
+
+.pageUp {
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  border: solid 0.1rem gray;
+  transform: translate(-1rem, -1rem);
+  bottom: 0;
+  right: 0;
+  background-color: #522582;
+  width: 5rem;
+  height: 5rem;
+}
+
+.ativo {
+  color: #b36cffb6;
+  transform: scale(1.2);
+  transition: 0.3s;
+  font-weight: 700;
+  text-decoration: underline;
+}
