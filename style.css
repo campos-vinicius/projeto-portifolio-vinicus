@@ -38,10 +38,27 @@ h3 {
   line-height: 1.3;
 }
 
+select {
+  display: flex;
+  align-items: center;
+  background-color: #50287e;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
 section {
   display: flex;
   max-width: 100rem;
   margin: auto;
+}
+
+form input,
+form textarea,
+form button {
+  display: flex;
+  flex-flow: column;
+  color: black;
+  padding: 1rem;
 }
 
 a {
@@ -88,10 +105,8 @@ header {
 
 nav ul {
   display: flex;
-  flex-flow: row;
+  flex-direction: row;
   justify-content: center;
-  list-style: none;
-  padding: 2rem;
   gap: 2rem;
 }
 
@@ -103,6 +118,10 @@ nav ul li {
 
 img.icones-header {
   width: 3rem;
+}
+
+.mobile {
+  display: none;
 }
 
 /*seção quem sou eu*/
@@ -276,7 +295,7 @@ footer h2 {
 
 .caixa-contato {
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   gap: 2rem;
 }
 
@@ -320,4 +339,92 @@ footer h2 {
   transition: 0.3s;
   font-weight: 700;
   text-decoration: underline;
+}
+
+.caixa-esquerda-contato {
+  display: flex;
+  flex-flow: column;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.caixa-direita-contato form {
+  display: flex;
+  flex-flow: column;
+  text-align: start;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+#sendInformation {
+  border: solid 0.1rem #c679ff;
+  background-color: #4c4452;
+  align-self: center;
+  width: 20rem;
+  padding: 1.4rem;
+}
+
+#sendInformation:hover {
+  background-color: #e66cd241;
+  transition: 0.6s;
+}
+
+/*media Query*/
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  img.icones-header,
+  button.pageUp {
+    width: 2rem;
+    height: auto;
+  }
+
+  .navegacao {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .container-caixas-projeto,
+  .caixa-contato,
+  section.secao-habilidades div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1,
+  h1 .realcar-nome {
+    font-size: 3rem;
+  }
+
+  .botoes-quem-sou-eu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sobre-mim-icones-inativo {
+    width: 5rem;
+  }
+
+  .icones-header {
+    width: 20px;
+    height: 20px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
 }

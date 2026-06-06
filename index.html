@@ -1,54 +1,101 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Vinícius Miguel Campos, estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor web."
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>portifólio | Vinícius</title>
+    <title>Portfólio | Vinícius</title>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li class="navegacao">
+          <!-- Navegação Desktop -->
+          <li class="navegacao desktop">
             <img
               class="icones-header"
-              src="about.png"
-              alt="icone-quem-sou-eu"
-            /><a class="font-white inativo" href="#quemSouEu">Quem sou eu</a>
+              src="iconesDaPagina/about.png"
+              alt="ícone quem sou eu"
+            />
+            <a class="font-white" href="#quemSouEu">Quem sou eu</a>
           </li>
-          <li class="navegacao">
+          <li class="navegacao desktop">
             <img
               class="icones-header"
-              src="information.png"
-              alt="icone-sobre-mim"
-            /><a class="font-white inativo" href="#sobreMim">Sobre Mim</a>
+              src="iconesDaPagina/information.png"
+              alt="ícone sobre mim"
+            />
+            <a class="font-white" href="#sobreMim">Sobre Mim</a>
           </li>
-          <li class="navegacao">
+          <li class="navegacao desktop">
             <img
               class="icones-header"
-              src="project.png"
-              alt="icone-projetos"
-            /><a class="font-white inativo" href="#projetos">Projetos</a>
+              src="iconesDaPagina/project.png"
+              alt="ícone projetos"
+            />
+            <a class="font-white" href="#projetos">Projetos</a>
           </li>
-          <li class="navegacao">
+          <li class="navegacao desktop">
             <img
               class="icones-header"
-              src="skill-development.png"
-              alt="icone-habilidades"
-            /><a class="font-white" href="#habilidades">Habilidades</a>
+              src="iconesDaPagina/skill-development.png"
+              alt="ícone habilidades"
+            />
+            <a class="font-white" href="#habilidades">Formação</a>
           </li>
-          <li class="navegacao">
+          <li class="navegacao desktop">
             <img
               class="icones-header"
-              src="contact-mail.png"
-              alt="icone-contato"
-            /><a class="font-white inativo" href="#contato">Contato</a>
+              src="iconesDaPagina/contact-mail.png"
+              alt="ícone contato"
+            />
+            <a class="font-white" href="#contato">Contato</a>
+          </li>
+
+          <!-- Navegação Mobile -->
+          <li class="navegacao mobile">
+            <select name="navegacao" id="navegacao">
+              <option value="#quemSouEu">Quem sou eu</option>
+              <option value="#sobreMim">Sobre Mim</option>
+              <option value="#projetos">Projetos</option>
+              <option value="#habilidades">Habilidades</option>
+              <option value="#contato">Contato</option>
+            </select>
+          </li>
+          <li class="navegacao mobile">
+            <img
+              class="icones-header"
+              src="iconesDaPagina/icone-git-hub.png"
+              alt="ícone git-hub"
+            />
+            <a class="font-white" href="#">Git-Hub</a>
+          </li>
+          <li class="navegacao mobile">
+            <img
+              class="icones-header"
+              src="iconesDaPagina/linkedin.png"
+              alt="ícone linkedin"
+            />
+            <a class="font-white" href="#">LinkedIn</a>
+          </li>
+          <li class="navegacao mobile">
+            <img
+              class="icones-header"
+              src="iconesDaPagina/mail.png"
+              alt="ícone gmail"
+            />
+            <a class="font-white inativo" href="#">Email</a>
           </li>
         </ul>
       </nav>
     </header>
+
     <main>
+      <!-- Seção Quem Sou Eu -->
       <section id="quemSouEu" class="secao-quem-sou-eu">
         <div class="container">
           <h1>
@@ -57,15 +104,15 @@
           </h1>
           <p class="primeiro-paragrafo-quem">Desenvolvedor Web</p>
           <p class="segundo-paragrafo-quem alinhar-texto">
-            Iniciei no Senai em informática básica e aprendendo inglês na
-            Cultura Inglesa. Atualmente estou cursando Análise e desenvolvimento
-            De Sistemas e procurando me desenvolver na área de desenvolvimento
-            Web
+            Atualmente curso Análise e Desenvolvimento de Sistemas e estudo
+            desenvolvimento web com foco em HTML, CSS e JavaScript. Busco
+            aprimorar minhas habilidades através de projetos práticos e
+            aprendizado contínuo.
           </p>
 
           <div class="botoes-quem-sou-eu">
             <div>
-              <a class="borda primeiro-botao-quem alinhar-texto" href="#"
+              <a class="borda primeiro-botao-quem alinhar-texto" href="#contato"
                 >Contato</a
               >
             </div>
@@ -80,6 +127,8 @@
           </div>
         </div>
       </section>
+
+      <!-- Seção Sobre Mim -->
       <section id="sobreMim" class="secao-sobre-mim">
         <div class="container container-sobre-mim">
           <h2 class="alinhar-texto">Sobre Mim</h2>
@@ -89,111 +138,190 @@
           </p>
 
           <div class="container-icones-sobre-mim">
-            <a href="#"
-              ><img
+            <a href="https://github.com/campos-vinicius">
+              <img
                 class="sobre-mim-icones-inativo icones borda"
-                src="icone-git-hub.png"
-                alt="icone-github"
-            /></a>
-            <a href="https://www.linkedin.com/feed/"
-              ><img
+                src="iconesDaPagina/icone-git-hub.png"
+                alt="ícone github"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/viniciusmiguelcampos/">
+              <img
                 class="sobre-mim-icones-inativo icones borda"
-                src="linkedin.png"
-                alt="icone-linkedin"
-            /></a>
+                src="iconesDaPagina/linkedin.png"
+                alt="ícone linkedin"
+              />
+            </a>
             <a
               target="_blank"
               href="https://mail.google.com/mail/?view=cm&fs=1&to=camposvinicius772@gmail.com"
-              ><img
+            >
+              <img
                 class="sobre-mim-icones-inativo icones borda"
-                src="mail.png"
-                alt="icone-email"
-            /></a>
+                src="iconesDaPagina/mail.png"
+                alt="ícone email"
+              />
+            </a>
           </div>
         </div>
       </section>
+
+      <!-- Seção Projetos -->
       <section id="projetos" class="secao-projetos">
-        <div class="container">
+        <div class="container container-projetos">
           <h2 class="font-white alinhar-texto h2-projetos">Projetos</h2>
           <div class="container-caixas-projeto">
             <div class="caixa-projeto borda">
-              <h3 class="font-white">Meu Projeto 1</h3>
-              <p>Breve descrição do projeto e tecnologias utilizadas.</p>
+              <h3 class="font-white">Portal de Adoções e Doações</h3>
+              <p>
+                Protótipo de um site para intermediar adoções e doações a uma
+                instituição que cuida dos animais.
+              </p>
               <div class="Habilidades-caixa">
-                <p class="borda font-white">React</p>
+                <p class="borda font-white">HTML</p>
                 <p class="borda font-white">CSS</p>
               </div>
               <div class="caixa-link-externo">
-                <a class="font-white" href="#">Ver Projeto</a
-                ><img
+                <a
+                  class="font-white"
+                  href="https://github.com/campos-vinicius/portal-ado-o-pets"
+                  >Ver Projeto</a
+                >
+                <img
                   class="icone-link-externo"
-                  src="link.png"
-                  alt="icone-link-externo"
+                  src="iconesDaPagina/link.png"
+                  alt="ícone link externo"
                 />
               </div>
             </div>
+
             <div class="caixa-projeto borda">
-              <h3 class="font-white">Meu Projeto 2</h3>
-              <p>Outro projeto interessante que desenvolvi.</p>
+              <h3 class="font-white">Portal de Portfólio Pessoal</h3>
+              <p>
+                Projeto realizado na Uninter, o objetivo era implementar um meio
+                de apresentar alguns dos meus projetos.
+              </p>
               <div class="Habilidades-caixa">
-                <p class="borda font-white">JavaScrip</p>
                 <p class="borda font-white">HTML</p>
+                <p class="borda font-white">CSS</p>
+                <p class="borda font-white">JavaScript</p>
               </div>
               <div class="caixa-link-externo">
-                <a class="font-white" href="#">Ver Projeto</a
-                ><img
+                <a
+                  class="font-white"
+                  href="https://github.com/campos-vinicius/projeto-portifolio-vinicus"
+                  >Ver Projeto</a
+                >
+                <img
                   class="icone-link-externo"
-                  src="link.png"
-                  alt="icone-link-externo"
+                  src="iconesDaPagina/link.png"
+                  alt="ícone link externo"
                 />
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Seção Habilidades -->
       <section id="habilidades" class="secao-habilidades">
-        <div class="container">
-          <h2 class="alinhar-texto font-white">Habilidades</h2>
+        <div class="container container-habilidade">
+          <h2 class="alinhar-texto font-white">Formação</h2>
           <div class="container-habilidades">
             <p class="borda font-white">Pacote Office</p>
             <p class="borda font-white">Power BI</p>
             <p class="borda font-white">HTML / CSS</p>
             <p class="borda font-white">JavaScript</p>
-            <p class="borda font-white">inglês Básico</p>
+            <p class="borda font-white">Inglês Básico</p>
           </div>
         </div>
       </section>
     </main>
+
     <footer id="contato" class="secao-contato alinhar-texto">
-      <div>
+      <div id="container-footer">
         <h2 class="font-white alinhar-texto">Contato</h2>
 
         <div class="caixa-contato">
-          <p>Quer conversar sobre um projeto? Entre em contato!</p>
-          <div class="caixa-contato-footer borda">
-            <img
-              class="icones"
-              src="mail.png"
-              alt="icone-email"
-            />
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=camposvinicius772@gmail.com"
-              >camposvinicius772@gmail.com</a
-            >
+          <div class="caixa-esquerda-contato">
+            <p>Quer conversar sobre um projeto? Entre em contato!</p>
+            <div class="caixa-contato-footer borda">
+              <img
+                class="icones"
+                src="iconesDaPagina/mail.png"
+                alt="ícone email"
+              />
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=camposvinicius772@gmail.com"
+                >camposvinicius772@gmail.com</a
+              >
+            </div>
+            <div class="caixa-links-footer">
+              <a
+                class="primeiro-botao-quem borda"
+                href="https://github.com/campos-vinicius"
+                >Git-Hub</a
+              >
+              <a
+                class="primeiro-botao-quem borda"
+                href="https://www.linkedin.com/in/viniciusmiguelcampos/"
+                >LinkedIn</a
+              >
+            </div>
           </div>
-          <div class="caixa-links-footer">
-            <a class="primeiro-botao-quem borda" href="#">Git-Hub</a>
-            <a class="primeiro-botao-quem borda" href="#">Linkedin</a>
-          </div>
+          <div class="caixa-direita-contato">
+            <form id="form" action="">
+              <label for="name">Nome:</label>
+              <input
+                class="borda"
+                required
+                placeholder="Informe seu nome:"
+                type="text"
+                name="name"
+                id="name"
+              />
 
-          <hr />
+              <label for="email">E-mail:</label>
+              <input
+                class="borda"
+                required
+                placeholder="Informe seu e-mail:"
+                type="email"
+                name="email"
+                id="email"
+              />
+
+              <label for="message">Mensagem:</label>
+              <textarea
+                class="borda"
+                cols="40"
+                rows="7"
+                placeholder="Caso desejar, informe sua mensagem aqui:"
+                name="message"
+                id="message"
+              ></textarea>
+
+              <button
+                class="borda font-white"
+                id="sendInformation"
+                type="submit"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
         </div>
+        <hr />
       </div>
       <p class="diretos">© 2026 Vinícius Miguel Campos</p>
     </footer>
 
     <button class="pageUp borda">
-      <img src="icone-page-up.png" alt="icone-page-up" />
+      <img
+        aria-label="Voltar ao Topo"
+        src="iconesDaPagina/icone-page-up.png"
+        alt="ícone-page-up"
+      />
     </button>
 
     <script src="script.js"></script>
